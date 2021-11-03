@@ -1,28 +1,32 @@
 /* Global rules */
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Fredoka+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 
 html {
-    background-color: lightgray;
-    font-family: 'Quicksand', sans-serif;
+    background-image: url("https://ak.picdn.net/shutterstock/videos/6144476/thumb/1.jpg");
+    font-family: 'Balsamiq Sans', cursive;
     font-size: 0.95em;
     line-height: 1.5em;
 }
 
 ::selection {
-    color: #000; 
-    background: #ff0;
+    color: rgb(71, 137, 175); 
+    background: #4a70d8af;
 }
 
 h1 {
     font-weight: normal;
+    font-family:'Fredoka One', cursive;
     margin: auto;
-    background: #fff;
+    background:#92b1dfc2;
     line-height: 2.5em;
 }
 
 main.wrapper {
-    background-color: white;
+    background-color:#b8e3ffa1;
     overflow: auto;
 }
 
@@ -37,13 +41,13 @@ h2,h3 {
 }
 
 a {
-    color:darkcyan;
+    color:#CAB8FF;
     text-decoration: none;
 }
 
 a:hover {
-    color: whitesmoke;
-    background-color: darkcyan;
+    color: black;
+    background-color: #92b1df96;
     text-decoration: none;
 }
 
@@ -71,6 +75,8 @@ footer {
         width: 50%;
         float: left;
         margin-right: 2em;
+        border: 9px double rgba(0, 21, 112, 0.671);
+        border-radius: 50%;
     }
     
 }
