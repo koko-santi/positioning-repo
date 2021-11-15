@@ -6,27 +6,27 @@
 
 
 html {
-    background-image: url("https://ak.picdn.net/shutterstock/videos/6144476/thumb/1.jpg");
+    background-image: url("https://media.istockphoto.com/photos/drought-soil-textured-background-picture-id900751270?k=20&m=900751270&s=612x612&w=0&h=H_ZchLCiDeaLvnPx7Q-rVMC3JS4f9AEhKl4Kq8iR7aQ=");
     font-family: 'Balsamiq Sans', cursive;
     font-size: 0.95em;
     line-height: 1.5em;
 }
 
 ::selection {
-    color: rgb(71, 137, 175); 
-    background: #4a70d8af;
+    color: rgb(82, 163, 109); 
+    background: #796e33af;
 }
 
 h1 {
     font-weight: normal;
     font-family:'Fredoka One', cursive;
     margin: auto;
-    background:#92b1dfc2;
+    background:#61aa5ac2;
     line-height: 2.5em;
 }
 
 main.wrapper {
-    background-color:#b8e3ffa1;
+    background-color:#99ca9ea1;
     overflow: auto;
 }
 
@@ -41,13 +41,13 @@ h2,h3 {
 }
 
 a {
-    color:#CAB8FF;
+    color:#ffffff;
     text-decoration: none;
 }
 
 a:hover {
     color: black;
-    background-color: #92b1df96;
+    background-color: #3f945b96;
     text-decoration: none;
 }
 
@@ -56,7 +56,107 @@ footer {
     text-align: center;
     padding: 1em;
 }
+/* positioning styles start here */
 
+
+.text-align-center{
+text-align:center;
+background-color: aqua;
+}
+
+.margin-auto > div{
+    margin:auto;
+    width: 50%;
+    background-color: beige;
+    text-align:center;
+
+}
+
+
+
+/* positioning styles end here */
+
+/* responsive 2 column layout rules start here */
+/* Social media, and flexbox, font awesome starts here */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+   .fa:hover {
+      opacity: 0.7;
+  }
+   .fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding: 20px 25px;
+ 
+  }
+   .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+   .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+   .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+   .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  } 
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+ 
+ 
+ 
+ 
+/* Social media, and flexbox, font awesome ends here */
+ 
+/* Allows box to take up full space, ignoring padding/margin */
+* {
+    box-sizing: border-box;
+  }
+ 
+/* Create two equal columns that float next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    min-height: 300px; 
+    /* Can be removed. Only for demonstration */
+  }
+   /* Clear floats after the columns */
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+/* responsive 2 column layout rules end here */
+
+/* flexible image rules start here */
+img.flexible{
+    width:100%;
+}
+.center-img{
+    margin: auto;
+    width: 100%;
+}
+.center-img img{
+    text-align:center;
+}
 /* Responsive rules */
 
 /* DESKTOP */
@@ -115,5 +215,9 @@ footer {
     picture.profile img {
         width: 100%;
     }
-    
+    /* columns take up whole screen in mobile */
+   .column {
+    width: 100%;
+  }
+
 }
